@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdMovement : MonoBehaviour {
+public class BirdCrackedMovement : MonoBehaviour {
 
     public float upForce = 200f;
 
@@ -12,7 +12,7 @@ public class BirdMovement : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D> ();
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -20,11 +20,16 @@ public class BirdMovement : MonoBehaviour {
     {
         if (isDead == false)
         {
-            if (Input.GetMouseButtonDown (0))
+            if (Input.GetMouseButtonDown(0))
             {
                 rb2d.velocity = Vector2.zero;
                 rb2d.AddForce(new Vector2(0, upForce));
             }
         }
+    }
+
+    void OnCollisonEnter2D()
+    {
+        isDead = true;
     }
 }
