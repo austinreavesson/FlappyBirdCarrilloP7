@@ -137,8 +137,9 @@ GameObject:
   - component: {fileID: 83639317}
   - component: {fileID: 83639318}
   - component: {fileID: 83639319}
+  - component: {fileID: 83639320}
   m_Layer: 0
-  m_Name: BirdHero_0
+  m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,7 +213,7 @@ SpriteRenderer:
   m_SortingLayerID: 1890483725
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2084602261, guid: 20f42240b6878f74bb5cb10acfbd85bd, type: 3}
+  m_Sprite: {fileID: -535753623, guid: 20f42240b6878f74bb5cb10acfbd85bd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -310,9 +311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e366cfe0c7838bf4f9046be71c95e4e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 200
-  isDead: 0
-  rb2d: {fileID: 0}
 --- !u!114 &83639319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -326,6 +324,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upForce: 200
+--- !u!95 &83639320
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83639313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d7cdd8b183cc3394b9e964684796b1ab, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
